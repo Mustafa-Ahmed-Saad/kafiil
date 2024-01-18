@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kafiil</title>
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!--  my style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--  dark mode -->
+    <link rel="stylesheet" href="./css/darkmode.css" />
+
+    <!--  grid -->
+    <link rel="stylesheet" href="./css/grid.css" />
+
+    <!--  my media -->
+    <link rel="stylesheet" href="./css/media.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ------------------------------------------------------------ start nav bar ------------------------------------------------------------ -->
+    <div class="py-10 nav-shadow bg-white navs-container">
+      <div class="container">
+        <nav class="nav main-nav">
+          <!-- -------------- logo ---------------->
+          <div class="d-inline-block logo">
+            <span class="no-style d-inline-block c-pointer">
+              <img class="w-100" src="./icons/main-logo.svg" alt="logo" />
+            </span>
+          </div>
+
+          <!-- -------------- nav links ---------------->
+          <div class="d-inline-block nav-links">
+            <ul class="no-style d-flex">
+              <li class="p-12 text-center">
+                <span class="no-style nav-link active c-pointer">
+                  <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                  <span class="d-block fw-600">Auctions</span>
+                </span>
+              </li>
+              <li class="p-12 text-center">
+                <span class="no-style nav-link c-pointer">
+                  <i class="fa-solid fa-trophy fa-lg"></i>
+                  <span class="d-block fw-600">Contests</span>
+                </span>
+              </li>
+              <li class="p-12 text-center">
+                <span class="no-style nav-link c-pointer">
+                  <i class="fa-solid fa-briefcase fa-lg"></i>
+                  <span class="d-block fw-600">Project</span></span
+                >
+              </li>
+              <li class="p-12 text-center">
+                <span class="no-style nav-link c-pointer">
+                  <i class="fa-regular fa-image fa-lg"></i>
+                  <span class="d-block fw-600">Portfolios</span>
+                </span>
+              </li>
+              <li class="p-12 text-center">
+                <span class="no-style nav-link c-pointer">
+                  <i class="fa-solid fa-users fa-lg"></i>
+                  <span class="d-block fw-600">Freelancers</span>
+                </span>
+              </li>
+              <li class="p-12 text-center">
+                <span class="no-style nav-link c-pointer">
+                  <i class="fa-regular fa-comments fa-lg"></i>
+                  <span class="d-block fw-600">Forum</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- -------------- user links ---------------->
+          <div class="d-inline-block">
+            <ul class="no-style d-flex align-items-center">
+              <li class="px-5 text-center me-5">
+                <span class="no-style position-relative c-pointer">
+                  <span class="user-badge">7</span>
+                  <i
+                    class="fa-regular fa-comment-dots fa-lg gray-600 fa-xl"
+                  ></i>
+                </span>
+              </li>
+              <li class="px-5 text-center me-5">
+                <span class="no-style position-relative c-pointer">
+                  <span class="user-badge">10</span>
+                  <i class="fa-regular fa-bell fa-lg gray-600 fa-xl"></i>
+                </span>
+              </li>
+              <li class="px-5 text-center position-relative">
+                <span
+                  class="no-style d-inline-block border-radius-50 c-pointer"
+                >
+                  <img
+                    class="user-img uniq-user"
+                    src="./icons/userImg.svg"
+                    alt="user"
+                  />
+                </span>
+
+                <!-- dropdown -->
+                <div class="user-dropdown gray-500 z-1">
+                  <div class="d-flex align-items-center border-b pb-5 my-5">
+                    <div class="me-5">
+                      <img
+                        class="user-img-2"
+                        src="./icons/userImg.svg"
+                        alt="user"
+                      />
+                    </div>
+                    <div class="text-start">
+                      <span class="d-block fw-bold nowrap black"
+                        >Ahmed Ali</span
+                      >
+                      <span class="job">student</span>
+                    </div>
+                  </div>
+
+                  <div class="text-start my-15 border-b pb-5">
+                    <i class="fa-regular fa-circle-user w-25 text-center"></i>
+                    <span>My Profile</span>
+                  </div>
+
+                  <div
+                    class="text-start my-15 d-flex align-items-center justify-content-between"
+                  >
+                    <div>
+                      <i class="fa-regular fa-moon w-25 text-center"></i>
+                      <span>Mode</span>
+                    </div>
+                    <div class="wrapper">
+                      <div class="checkbox-container">
+                        <!-- checkbox-1 -->
+                        <div class="checkbox-wrapper">
+                          <input
+                            type="checkbox"
+                            class="checkbox-1"
+                            checked
+                            id="checkbox-1"
+                          />
+                          <label for="checkbox-1">.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-start my-15 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex">
+                      <i class="fa-solid fa-language w-25 text-center"></i>
+                      <span class="ms-5">Language</span>
+                    </div>
+
+                    <div class="d-flex">
+                      <span class="me-5 black cairo">العربية</span>
+                      <img class="w-100" src="./icons/Saudi.svg" alt="Saudi" />
+                    </div>
+                  </div>
+
+                  <div class="text-start my-15 border-b pb-5">
+                    <i class="fa-solid fa-gear w-25 text-center"></i>
+                    <span> Account Settings </span>
+                  </div>
+                  <div class="text-start my-5 error-300">
+                    <i
+                      class="fa-solid fa-arrow-right-from-bracket w-25 text-center"
+                    ></i>
+                    <span> Logout </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- ------------------------------------ -->
+        <!-- ------------------------------------ -->
+
+        <nav class="responsive-nav">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-inline-block">
+              <ul class="no-style d-flex align-items-center">
+                <li class="px-5 text-center me-5">
+                  <span class="no-style position-relative c-pointer">
+                    <span class="user-badge">7</span>
+                    <i class="fa-regular fa-comment-dots fa-lg gray-600"></i>
+                  </span>
+                </li>
+                <li class="px-5 text-center me-5">
+                  <span class="no-style position-relative c-pointer">
+                    <span class="user-badge">10</span>
+                    <i class="fa-regular fa-bell fa-lg gray-600"></i>
+                  </span>
+                </li>
+                <li class="px-5 text-center position-relative">
+                  <span
+                    class="no-style d-inline-block border-radius-50 c-pointer"
+                  >
+                    <img
+                      class="user-img uniq-user"
+                      src="./icons/userImg.svg"
+                      alt="user"
+                    />
+                  </span>
+
+                  <!-- dropdown -->
+                  <div class="user-dropdown gray-500 z-1">
+                    <div class="d-flex align-items-center border-b pb-5 my-5">
+                      <div class="me-5">
+                        <img
+                          class="user-img-2"
+                          src="./icons/userImg.svg"
+                          alt="user"
+                        />
+                      </div>
+                      <div class="text-start">
+                        <span class="d-block fw-bold nowrap black"
+                          >Ahmed Ali</span
+                        >
+                        <span class="job">student</span>
+                      </div>
+                    </div>
+
+                    <div class="text-start my-15 border-b pb-5">
+                      <i class="fa-regular fa-circle-user w-25 text-center"></i>
+                      <span>My Profile</span>
+                    </div>
+
+                    <div
+                      class="text-start my-15 d-flex align-items-center justify-content-between"
+                    >
+                      <div>
+                        <i class="fa-regular fa-moon w-25 text-center"></i>
+                        <span>Mode</span>
+                      </div>
+                      <div class="wrapper">
+                        <div class="checkbox-container">
+                          <!-- checkbox-1-responsive -->
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              class="checkbox-1-responsive"
+                              checked
+                              id="checkbox-1-responsive"
+                            />
+                            <label for="checkbox-1-responsive">.</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="text-start my-15 d-flex align-items-center justify-content-between"
+                    >
+                      <div class="d-flex">
+                        <i class="fa-solid fa-language w-25 text-center"></i>
+                        <span class="ms-5">Language</span>
+                      </div>
+
+                      <div class="d-flex">
+                        <span class="me-5 black cairo">العربية</span>
+                        <img
+                          class="w-100"
+                          src="./icons/Saudi.svg"
+                          alt="Saudi"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="text-start my-15 border-b pb-5">
+                      <i class="fa-solid fa-gear w-25 text-center"></i>
+                      <span> Account Settings </span>
+                    </div>
+                    <div class="text-start my-5 error-300">
+                      <i
+                        class="fa-solid fa-arrow-right-from-bracket w-25 text-center"
+                      ></i>
+                      <span> Logout </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="position-relative">
+              <i
+                id="responsive-menu"
+                class="fa-solid fa-bars fa-lg c-pointer"
+              ></i>
+
+              <div
+                id="responsive-dropdown"
+                class="d-inline-block nav-links position-absolute start-n120 top-35 bg-white z-1 nav-shadow border-radius-10"
+              >
+                <ul
+                  class="no-style d-flex flex-col align-items-flex-start min-w-200"
+                >
+                  <li class="p-12 text-center">
+                    <span class="no-style nav-link c-pointer active">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span class="fw-500">Auctions</span>
+                    </span>
+                  </li>
+                  <li class="p-12 text-center">
+                    <span class="no-style nav-link c-pointer">
+                      <i class="fa-solid fa-trophy"></i>
+                      <span class="fw-500">Contests</span>
+                    </span>
+                  </li>
+                  <li class="p-12 text-center">
+                    <span class="no-style nav-link c-pointer">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <span class="fw-500"> Project </span>
+                    </span>
+                  </li>
+                  <li class="p-12 text-center">
+                    <span class="no-style nav-link c-pointer">
+                      <i class="fa-regular fa-image"></i>
+                      <span class="fw-500"> Portfolios </span>
+                    </span>
+                  </li>
+                  <li class="p-12 text-center">
+                    <span class="no-style nav-link c-pointer">
+                      <i class="fa-solid fa-users"></i>
+                      <span class="fw-500"> Freelancers </span>
+                    </span>
+                  </li>
+                  <li class="p-12 text-center">
+                    <span class="no-style nav-link c-pointer">
+                      <i class="fa-regular fa-comments"></i>
+                      <span class="fw-500"> Forum</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- ------------------------------------ -->
+        <!-- ------------------------------------ -->
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------ end nav bar ------------------------------------------------------------ -->
+
+    <div class="py-first-section">
+      <div class="container">
+        <div class="row gx-5 all-content">
+          <!------------------------------------------------------------------------------------------------------------------------------------->
+          <!------------------------------------------------------ start left content page ------------------------------------------------------>
+          <!------------------------------------------------------------------------------------------------------------------------------------->
+          <div class="col-12 col-lg-9">
+            <!------------------------------------------------------ start section before slider ------------------------------------------------------>
+            <div class="mb-25">
+              <span class="d-block gray-400">Design / Logo Design</span>
+              <p class="fw-600 fs-1-5 lh-28">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                nisi, cras neque Lorem ipsum dolor sit amet,
+              </p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa-solid fa-star warning-300"></i>
+                  <i class="fa-solid fa-star warning-300"></i>
+                  <i class="fa-solid fa-star warning-300"></i>
+                  <i class="fa-solid fa-star warning-300"></i>
+                  <i class="fa-solid fa-star gray-200 me-5"></i>
+                  <span class="gray-500">4.1 (500)</span>
+                </div>
+                <div>
+                  <i
+                    class="fa-solid fa-share-nodes fa-lg me-5 gray-400 fa-xl"
+                  ></i>
+                  <i class="fa-regular fa-heart fa-lg gray-400 fa-xl"></i>
+                </div>
+              </div>
+            </div>
+            <!------------------------------------------------------ end section before slider ------------------------------------------------------>
+
+            <!-- we can user slick-carousel here i think it will be good but decided to do it from scratch to prove my skills -->
+
+            <!------------------------------------------------------ start slider ------------------------------------------------------>
+            <div class="py-10 mb-50">
+              <div class="slider-container">
+                <img src="photo/1.jpg" class="handel-img" alt="img1" />
+                <img src="photo/2.jpg" class="handel-img" alt="img2" />
+                <img src="photo/3.jpg" class="handel-img" alt="img3" />
+
+                <div class="slider-controls">
+                  <span id="prev" class="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </span>
+                  <span id="indicators" class="indicators"></span>
+                  <span id="next" class="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!------------------------------------------------------ end slider ------------------------------------------------------>
+
+            <!------------------------------------------------------ start Description ------------------------------------------------------>
+            <div>
+              <h2 class="h-section">Description</h2>
+
+              <p class="bg-white main-p description-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Diam nisi, cras neque
+                Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum
+                dolor sit amet, Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Diam nisi, cras neque
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <!------------------------------------------------------ end Description ------------------------------------------------------>
+
+            <!------------------------------------------------------ start Service Add-Ons ------------------------------------------------------>
+            <div id="Service-Add-Ons">
+              <div class="d-flex align-items-center justify-content-between">
+                <h2 class="h-section">Service Add-Ons</h2>
+                <div id="select-all-Services" class="c-pointer">
+                  <i class="fa-regular fa-circle-check gray-300"></i>
+                  <span class="gray-300"> Select All</span>
+                </div>
+              </div>
+
+              <div class="bg-white main-p mb-20">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-10"
+                >
+                  <div class="round position-relative">
+                    <input
+                      type="checkbox"
+                      checked
+                      data-select-key="service-checkbox"
+                      id="checkbox-2"
+                    />
+                    <label for="checkbox-2"></label>
+                  </div>
+                  <p class="fw-500">
+                    <label for="checkbox-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+                      ipsum dolor sit amet.
+                    </label>
+                  </p>
+                </div>
+                <div>
+                  <span class="bg-main-100 main-color badge-price">$100</span>
+                  <span class="bg-main-100 main-color badge-price">2 days</span>
+                </div>
+              </div>
+
+              <div class="bg-white main-p mb-20">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-10"
+                >
+                  <div class="round position-relative">
+                    <input
+                      type="checkbox"
+                      data-select-key="service-checkbox"
+                      id="checkbox-3"
+                    />
+                    <label for="checkbox-3"></label>
+                  </div>
+                  <p class="fw-500">
+                    <label for="checkbox-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+                      ipsum dolor sit amet.
+                    </label>
+                  </p>
+                </div>
+                <div>
+                  <span class="bg-main-100 main-color badge-price">$100</span>
+                  <span class="bg-main-100 main-color badge-price">2 days</span>
+                </div>
+              </div>
+
+              <div class="bg-white main-p">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-10"
+                >
+                  <div class="round position-relative">
+                    <input
+                      type="checkbox"
+                      data-select-key="service-checkbox"
+                      id="checkbox-4"
+                    />
+                    <label for="checkbox-4"></label>
+                  </div>
+                  <p class="fw-500">
+                    <label for="checkbox-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+                      ipsum dolor sit amet.
+                    </label>
+                  </p>
+                </div>
+                <div>
+                  <span class="bg-main-100 main-color badge-price">$100</span>
+                  <span class="bg-main-100 main-color badge-price">2 days</span>
+                </div>
+              </div>
+            </div>
+            <!------------------------------------------------------ end Service Add-Ons ------------------------------------------------------>
+
+            <!------------------------------------------------------ start Purchase Service ------------------------------------------------------>
+            <div>
+              <h2 class="h-section">Purchase Service</h2>
+
+              <div class="bg-white main-p">
+                <div class="row purchase-content gx-4 align-items-center">
+                  <div class="col-12 col-sm-10">
+                    <div
+                      class="row count-price-container gx-2 align-items-center"
+                    >
+                      <div class="col-12 col-sm-10">
+                        <div class="text-center srvice-ele">
+                          <button
+                            class="main-color bg-white service-btn fw-bold c-pointer"
+                            data-select-key="service-btn"
+                            type="button"
+                            data-value="-1"
+                            id="btn-decrease"
+                          >
+                            -
+                          </button>
+                          <span id="count" class="px-50">1</span>
+                          <button
+                            class="main-color bg-white service-btn fw-bold c-pointer"
+                            data-select-key="service-btn"
+                            type="button"
+                            data-value="1"
+                            id="btn-increase"
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-2">
+                        <div class="text-center srvice-ele fw-bold">
+                          <span id="price">$100</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-2">
+                    <div>
+                      <button class="srvice-ele d-block purchase effect-btn">
+                        Purchase
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!------------------------------------------------------ end Purchase Service ------------------------------------------------------>
+
+            <!------------------------------------------------------ start Service Rating and comments ------------------------------------------------------>
+            <div class="mt-100">
+              <h2 class="h-section">
+                <i class="fa-solid fa-star warning-300"></i> 4.6 Service Rating
+                . 46 Ratings
+              </h2>
+
+              <div class="bg-white main-p">
+                <div class="row my-15">
+                  <div class="col-12 col-md-6 col-lg-5">
+                    <div>
+                      <span class="me-5 fw-500">Work Quality</span>
+
+                      <i class="fa-solid fa-star warning-300"></i> 5.0
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-2">
+                    <div>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star gray-200"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <span class="progress-rate position-relative"></span>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row my-15">
+                  <div class="col-12 col-md-6 col-lg-5">
+                    <div>
+                      <span class="me-5 fw-500"
+                        >Communication & Collaboration</span
+                      >
+
+                      <i class="fa-solid fa-star warning-300"></i> 5.0
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-2">
+                    <div>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star gray-200"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <span class="progress-rate position-relative"></span>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row my-15">
+                  <div class="col-12 col-md-6 col-lg-5">
+                    <div>
+                      <span class="me-5 fw-500">Adherence to Schedule</span>
+
+                      <i class="fa-solid fa-star warning-300"></i> 5.0
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-2">
+                    <div>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star gray-200"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <span class="progress-rate position-relative"></span>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- comments -->
+            <div id="users-comments" class="mt-25 bg-white main-p">
+              <div class="row my-15">
+                <div class="col-1">
+                  <div class="text-center">
+                    <img src="photo/PosterAvatar.png" alt="PosterAvatar" />
+                  </div>
+                </div>
+                <div class="col-11">
+                  <div>
+                    <span
+                      class="d-block fw-bold nowrap black mb-5 creator-comment-name"
+                      >Jane Smith</span
+                    >
+                    <span class="d-block">
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star gray-200 me-5"></i>
+                      <span class="gray-400">30m</span>
+                    </span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit....
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit....
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row my-15">
+                <div class="col-1">
+                  <div class="text-center">
+                    <img src="photo/PosterAvatar.png" alt="PosterAvatar" />
+                  </div>
+                </div>
+                <div class="col-11">
+                  <div>
+                    <span
+                      class="d-block fw-bold nowrap black mb-5 creator-comment-name"
+                      >Jane Smith</span
+                    >
+                    <span class="d-block">
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star gray-200 me-5"></i>
+                      <span class="gray-400">30m</span>
+                    </span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit....
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit....
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row my-15">
+                <div class="col-1">
+                  <div class="text-center">
+                    <img src="photo/PosterAvatar.png" alt="PosterAvatar" />
+                  </div>
+                </div>
+                <div class="col-11">
+                  <div>
+                    <span
+                      class="d-block fw-bold nowrap black mb-5 creator-comment-name"
+                      >Jane Smith</span
+                    >
+                    <span class="d-block">
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star warning-300"></i>
+                      <i class="fa-solid fa-star gray-200 me-5"></i>
+                      <span class="gray-400">30m</span>
+                    </span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit....
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit....
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-50">
+                <div class="col-1">
+                  <div class="text-center">
+                    <img src="icons/userImg.svg" alt="PosterAvatar" />
+                  </div>
+                </div>
+                <div class="col-11">
+                  <div>
+                    <textarea
+                      name="my-comment"
+                      id="my-comment-textarea"
+                      placeholder="Write your review in here"
+                      cols="90"
+                      rows="7"
+                    ></textarea>
+                    <button class="post-review effect-btn" type="button">
+                      Post Review
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!------------------------------------------------------ end Service Rating and comments ------------------------------------------------------>
+          </div>
+          <!------------------------------------------------------------------------------------------------------------------------------------->
+          <!------------------------------------------------------ end left content page ------------------------------------------------------>
+          <!------------------------------------------------------------------------------------------------------------------------------------->
+
+          <!------------------------------------------------------------------------------------------------------------------------------------->
+          <!------------------------------------------------------ start right content page ------------------------------------------------------>
+          <!------------------------------------------------------------------------------------------------------------------------------------->
+          <div class="col-12 col-sm-8 col-md-6 col-lg-3 seller-card">
+            <div>
+              <div
+                class="seller-div bg-white px-20 py-10 pb-20 border-radius-10"
+              >
+                <h3>Seller</h3>
+                <div class="seller-info">
+                  <div class="div-img position-relative text-center">
+                    <img src="photo/PosterAvatar.png" alt="seller" />
+                  </div>
+                  <div class="text-center">
+                    <span class="fw-bold"> Jane Smith</span>
+                    <i
+                      class="fa-regular fa-circle-check bg-main border-radius-50 color-white"
+                    ></i>
+                  </div>
+
+                  <div class="text-center gray-400 my-15">
+                    <i class="fa-solid fa-location-dot"></i> Cairo, Egypt
+                  </div>
+
+                  <div class="text-center seller-p">
+                    <i class="fa-solid fa-star warning-300"></i>
+                    <i class="fa-solid fa-star warning-300"></i>
+                    <i class="fa-solid fa-star warning-300"></i>
+                    <i class="fa-solid fa-star warning-300"></i>
+                    <i class="fa-solid fa-star gray-200 me-5"></i>
+                    <span class="gray-500">4.1 (500)</span>
+                  </div>
+
+                  <div class="text-center my-15">
+                    <span class="seller-icons me-5">
+                      <i class="fa-solid fa-medal"></i>
+                    </span>
+                    <span class="seller-icons me-5">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </span>
+                    <span class="seller-icons">
+                      <i class="fa-solid fa-address-card"></i>
+                    </span>
+                  </div>
+
+                  <p class="seller-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Diam Lorem ipsum dolor sit amet..
+                  </p>
+                  <button
+                    class="bg-main color-white w-100 py-10 border-radius-5 border-0 effect-btn"
+                    type="button"
+                  >
+                    Contact Me
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white px-20 py-10 pb-20 border-radius-10 mt-25 fw-500 fs-0-9"
+            >
+              <h3>Info</h3>
+              <div
+                class="d-flex align-items-center justify-content-between my-15"
+              >
+                <div>
+                  <i class="fa-solid fa-sack-dollar gray-500 w-25"></i>
+                  price
+                </div>
+                <div>$10</div>
+              </div>
+
+              <div
+                class="d-flex align-items-center justify-content-between my-15"
+              >
+                <div>
+                  <i class="fa-solid fa-clock gray-500 w-25"></i>
+                  Delivery Duration
+                </div>
+                <div>1 day</div>
+              </div>
+
+              <div
+                class="d-flex align-items-center justify-content-between my-15"
+              >
+                <div>
+                  <i class="fa-solid fa-basket-shopping gray-500 w-25"></i>
+                  In Progress Orders
+                </div>
+                <div>2</div>
+              </div>
+
+              <div
+                class="d-flex align-items-center justify-content-between my-15"
+              >
+                <div>
+                  <i class="fa-solid fa-user-group gray-500 w-25"></i>
+                  Customers
+                </div>
+                <div>2</div>
+              </div>
+
+              <div
+                class="d-flex align-items-center justify-content-between my-15"
+              >
+                <div>
+                  <i class="fa-solid fa-percent gray-500 w-25"></i>
+                  Sales
+                </div>
+                <div>$25</div>
+              </div>
+
+              <div
+                class="d-flex align-items-center justify-content-between my-15"
+              >
+                <div>
+                  <i class="fa-solid fa-list gray-500 w-25"></i>
+                  Category
+                </div>
+                <div>Design</div>
+              </div>
+
+              <div
+                class="d-flex align-items-center justify-content-between my-15 fs-res"
+              >
+                <div class="nowrap">
+                  <i class="fa-solid fa-list gray-500 w-25"></i>
+                  Subcategory
+                </div>
+                <div class="nowrap">Logo Design</div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white px-20 py-10 pb-20 border-radius-10 mt-25 text-center"
+            >
+              <h3>Share & Earn</h3>
+              <div
+                class="share-earn pb-20 d-flex align-items-center justify-content-center"
+              >
+                <span
+                  class="share-icons p-12 border-radius-8 me-5 color-white bg-linkedin-color"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </span>
+                <span
+                  class="share-icons p-12 border-radius-8 me-5 color-white bg-facebook-color"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </span>
+                <span
+                  class="share-icons p-12 border-radius-8 me-5 color-white bg-whatsapp-color"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </span>
+                <span
+                  class="share-icons p-12 border-radius-8 me-5 color-white bg-twitter-color"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </span>
+                <span
+                  class="share-icons p-12 border-radius-8 me-5 gray-600 bg-copy-color"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="mt-50">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3>Seller Other Services</h3>
+                <span class="gray-300">see more</span>
+              </div>
+
+              <!-- small card -->
+              <div
+                class="bg-white border-radius-10 fs-0-9 overflow-hidden pe-10 mb-10"
+              >
+                <div class="row">
+                  <div class="col-5">
+                    <img
+                      class="w-100 handel-img"
+                      src="photo/small.png"
+                      alt="photo"
+                    />
+                  </div>
+                  <div class="col-7 ps-0 py-5">
+                    <div class="small-card-container">
+                      <p class="small-card-p">
+                        Lorem ipsum dolor sit ame, consecteturLorem ipsum
+                        dolor...
+                      </p>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <i class="fa-solid fa-star warning-300"></i>
+                          <span class="gray-400">4.9 (50)</span>
+                          <i class="fa-solid fa-tag me-5 main-color"></i>$10
+                        </div>
+                        <div class="clickable-hart">
+                          <i
+                            class="fa-regular fa-heart fa-lg gray-400 c-pointer"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- small card -->
+              <div
+                class="bg-white border-radius-10 fs-0-9 overflow-hidden pe-10 mb-10"
+              >
+                <div class="row">
+                  <div class="col-5">
+                    <img
+                      class="w-100 handel-img"
+                      src="photo/small.png"
+                      alt="photo"
+                    />
+                  </div>
+                  <div class="col-7 ps-0 py-5">
+                    <div class="small-card-container">
+                      <p class="small-card-p">
+                        Lorem ipsum dolor sit ame, consecteturLorem ipsum
+                        dolor...
+                      </p>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <i class="fa-solid fa-star warning-300"></i>
+                          <span class="gray-400">4.9 (50)</span>
+                          <i class="fa-solid fa-tag me-5 main-color"></i>$10
+                        </div>
+                        <div class="clickable-hart">
+                          <i
+                            class="fa-regular fa-heart fa-lg gray-400 c-pointer"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- small card -->
+              <div
+                class="bg-white border-radius-10 fs-0-9 overflow-hidden pe-10 mb-10"
+              >
+                <div class="row">
+                  <div class="col-5">
+                    <img
+                      class="w-100 handel-img"
+                      src="photo/small.png"
+                      alt="photo"
+                    />
+                  </div>
+                  <div class="col-7 ps-0 py-5">
+                    <div class="small-card-container">
+                      <p class="small-card-p">
+                        Lorem ipsum dolor sit ame, consecteturLorem ipsum
+                        dolor...
+                      </p>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <i class="fa-solid fa-star warning-300"></i>
+                          <span class="gray-400">4.9 (50)</span>
+                          <i class="fa-solid fa-tag me-5 main-color"></i>$10
+                        </div>
+                        <div class="clickable-hart">
+                          <i
+                            class="fa-regular fa-heart fa-lg gray-400 c-pointer"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!------------------------------------------------------------------------------------------------------------------------------------->
+          <!------------------------------------------------------ end right content page ------------------------------------------------------>
+          <!------------------------------------------------------------------------------------------------------------------------------------->
+        </div>
+
+        <!------------------------------------------------------ start Suggested Services ------------------------------------------------------>
+        <div>
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="h-section">Suggested Services</h2>
+            <span class="gray-300">see more</span>
+          </div>
+
+          <div class="row">
+            <!---------------------- item 1 ---------------------->
+            <div class="col-12 col-md-6 col-lg-3 suggested-services-card">
+              <div class="card bg-white pb-15">
+                <div class="card-top position-relative">
+                  <img class="handel-img" src="photo/card.png" alt="card1" />
+                  <div class="position-absolute icon-card clickable-hart">
+                    <i class="fa-regular fa-heart fa-lg gray-400 c-pointer"></i>
+                  </div>
+                </div>
+
+                <div class="card-bottom px-15">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  </p>
+
+                  <div class="mb-10">
+                    <span class="me-5">
+                      <i class="fa-solid fa-star warning-300"></i> 4.9</span
+                    >
+                    <span>
+                      <i class="fa-solid fa-cart-shopping gray-400"></i> 300
+                    </span>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="me-5"
+                        src="./photo/PosterAvatar.png"
+                        alt="min-img"
+                      />
+                      <span>Jane Smith</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-tag me-5 main-color"></i>
+                      <span class="fw-bold">$10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!---------------------- item 2 ---------------------->
+            <div class="col-12 col-md-6 col-lg-3 suggested-services-card">
+              <div class="card bg-white pb-15">
+                <div class="card-top position-relative">
+                  <img class="handel-img" src="photo/card.png" alt="card1" />
+                  <div class="position-absolute icon-card clickable-hart">
+                    <i class="fa-regular fa-heart fa-lg gray-400 c-pointer"></i>
+                  </div>
+                </div>
+
+                <div class="card-bottom px-15">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  </p>
+
+                  <div class="mb-10">
+                    <span class="me-5">
+                      <i class="fa-solid fa-star warning-300"></i> 4.9</span
+                    >
+                    <span>
+                      <i class="fa-solid fa-cart-shopping gray-400"></i> 300
+                    </span>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="me-5"
+                        src="./photo/PosterAvatar.png"
+                        alt="min-img"
+                      />
+                      <span>Jane Smith</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-tag me-5 main-color"></i>
+                      <span class="fw-bold">$10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!---------------------- item 3 ---------------------->
+            <div class="col-12 col-md-6 col-lg-3 suggested-services-card">
+              <div class="card bg-white pb-15">
+                <div class="card-top position-relative">
+                  <img class="handel-img" src="photo/card.png" alt="card1" />
+                  <div class="position-absolute icon-card clickable-hart">
+                    <i class="fa-regular fa-heart fa-lg gray-400 c-pointer"></i>
+                  </div>
+                </div>
+
+                <div class="card-bottom px-15">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  </p>
+
+                  <div class="mb-10">
+                    <span class="me-5">
+                      <i class="fa-solid fa-star warning-300"></i> 4.9</span
+                    >
+                    <span>
+                      <i class="fa-solid fa-cart-shopping gray-400"></i> 300
+                    </span>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="me-5"
+                        src="./photo/PosterAvatar.png"
+                        alt="min-img"
+                      />
+                      <span>Jane Smith</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-tag me-5 main-color"></i>
+                      <span class="fw-bold">$10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!---------------------- item 4 ---------------------->
+            <div class="col-12 col-md-6 col-lg-3 suggested-services-card">
+              <div class="card bg-white pb-15">
+                <div class="card-top position-relative">
+                  <img class="handel-img" src="photo/card.png" alt="card1" />
+                  <div class="position-absolute icon-card clickable-hart">
+                    <i class="fa-regular fa-heart fa-lg gray-400 c-pointer"></i>
+                  </div>
+                </div>
+
+                <div class="card-bottom px-15">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  </p>
+
+                  <div class="mb-10">
+                    <span class="me-5">
+                      <i class="fa-solid fa-star warning-300"></i> 4.9</span
+                    >
+                    <span>
+                      <i class="fa-solid fa-cart-shopping gray-400"></i> 300
+                    </span>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="me-5"
+                        src="./photo/PosterAvatar.png"
+                        alt="min-img"
+                      />
+                      <span>Jane Smith</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-tag me-5 main-color"></i>
+                      <span class="fw-bold">$10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------------------------------------ end Suggested Services ------------------------------------------------------>
+      </div>
+    </div>
+
+    <!-- link js file -->
+    <script src="./js/main-js.js"></script>
+
+    <!-- link jquery library -->
+    <!-- <script src="./js/jQueryLibrary.js"></script> -->
+    <!-- link jquery file -->
+    <!-- <script src="./js/main-jquery.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,748 @@
+:root {
+  --main-color: #1dbf73;
+  --main-press-color: #1b975d;
+  --main-color-100: #e9f9f1;
+  --gray-300: #c3c5c8;
+  --gray-50: #f6f6f6;
+  --gray-200: #e6eaef;
+  --gray-400: #8692a6;
+  --gray-500: #696f79;
+  --gray-600: #7a7879;
+  --error-300: #f56342;
+  --error-500: #ff5353;
+  --warning-300: #ffcb31;
+}
+
+html,
+body {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  background-color: var(--gray-50);
+}
+body {
+  transition: 1s;
+}
+
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* ------------------------------------------------- start colors ------------------------------------------------- */
+.color-white {
+  color: #fff;
+}
+
+.warning-300 {
+  color: var(--warning-300);
+}
+.gray-200 {
+  color: var(--gray-200);
+}
+.gray-300 {
+  color: var(--gray-300);
+}
+.gray-400 {
+  color: var(--gray-400);
+}
+.error-300 {
+  color: var(--error-300);
+}
+.error-500 {
+  color: var(--error-500);
+}
+.black {
+  color: #000;
+}
+.gray-500 {
+  color: var(--gray-500);
+}
+
+.gray-600 {
+  color: var(--gray-600);
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+/* ------------------------------------------------- end colors ------------------------------------------------- */
+
+/* ------------------------------------------------- start background-color ------------------------------------------------- */
+.bg-main-100 {
+  background-color: var(--main-color-100);
+}
+.bg-white {
+  transition: 1s;
+  background-color: #ffff;
+}
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.bg-linkedin-color {
+  background-color: #2867b2;
+}
+
+.bg-facebook-color {
+  background-color: #1877f2;
+}
+.bg-whatsapp-color {
+  background-color: #25d366;
+}
+.bg-twitter-color {
+  background-color: #1da1f2;
+}
+.bg-copy-color {
+  background-color: #f2f2f2;
+}
+
+/* ------------------------------------------------- end background-color ------------------------------------------------- */
+
+/* ------------------------------------------------- start reusable classes ------------------------------------------------- */
+ul.no-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+span.no-style,
+a.no-style {
+  text-decoration: none;
+  color: var(--gray-300);
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.ps-0 {
+  padding-left: 0 !important;
+}
+.p-12 {
+  padding: 12px;
+}
+.pe-10 {
+  padding-right: 10px;
+}
+.px-50 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.px-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.px-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.pb-5 {
+  padding-bottom: 5px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.py-first-section {
+  padding-top: 130px;
+  padding-bottom: 45px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+.mt-50 {
+  margin-top: 50px !important;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.me-5 {
+  margin-right: 5px;
+}
+.ms-5 {
+  margin-left: 5px;
+}
+.my-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.my-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-25 {
+  width: 25px;
+}
+.z-1 {
+  z-index: 1;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+
+.top-35 {
+  top: 35px;
+}
+
+.start-n120 {
+  left: -120px;
+}
+
+.border-0 {
+  border: 0;
+}
+.border-radius-5 {
+  border-radius: 5px;
+}
+.border-radius-50 {
+  border-radius: 50%;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.text-start {
+  text-align: left;
+}
+.border-b {
+  border-bottom: 1px solid var(--gray-50);
+}
+.nowrap {
+  white-space: nowrap;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.lh-28 {
+  line-height: 28.8px;
+}
+.fs-1-5 {
+  font-size: 1.5rem;
+}
+.fs-0-9 {
+  font-size: 0.9rem;
+}
+
+.cairo {
+  font-family: Cairo;
+  font-size: 14px;
+  font-weight: 500;
+}
+.border-radius-10 {
+  border-radius: 10px;
+}
+.border-radius-8 {
+  border-radius: 8px;
+}
+.effect-btn {
+  cursor: pointer;
+  transition: 0.4s !important;
+}
+.effect-btn:hover {
+  background-color: var(--main-press-color);
+}
+/* ------------------------------------------------- end reusable classes ------------------------------------------------- */
+
+/* ----------------------------------------------------------- start nav ----------------------------------------------------------- */
+
+.navs-container {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-shadow {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.nav-link {
+  transition: 0.4s;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+.user-badge {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  background-color: var(--main-color);
+  position: absolute;
+  top: -7px;
+  right: -3px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+.user-img {
+  border: 3px solid var(--main-color);
+  border-radius: 50%;
+}
+.user-img-2 {
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+}
+.active {
+  color: var(--main-color) !important;
+  transition: 0.2s;
+}
+.user-dropdown {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  display: none;
+  min-width: 200px;
+  padding: 10px;
+  transition: 1s;
+}
+.user-dropdown.show {
+  display: block !important;
+}
+
+.min-w-200 {
+  min-width: 180px;
+}
+
+.job {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--gray-400);
+}
+
+/* input[type="checkbox"]#checkbox-1,
+   input[type="checkbox"]#checkbox-1-responsive,
+*/
+input[type="checkbox"] {
+  opacity: 0;
+  display: none;
+}
+.checkbox-wrapper {
+  width: 30px;
+  height: 17px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+label[for="checkbox-1"],
+label[for="checkbox-1-responsive"] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--gray-300);
+  position: relative;
+  transition: 250ms;
+  cursor: pointer;
+}
+label[for="checkbox-1"]:before,
+label[for="checkbox-1-responsive"]:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--main-color);
+  position: absolute;
+  border-radius: 100%;
+  inset: 0;
+  left: 3px;
+  transition: ease-in 250ms;
+  margin: auto 0;
+}
+#checkbox-1:checked + label:before,
+#checkbox-1-responsive:checked + label:before {
+  left: 17px;
+  background: #fff;
+}
+#checkbox-1:checked + label,
+#checkbox-1-responsive:checked + label {
+  background: var(--main-color);
+}
+/* ----------------------------------------------------------- end nav ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- start responsive nav ----------------------------------------------------------- */
+#responsive-dropdown {
+  display: none;
+}
+#responsive-dropdown.show {
+  display: block !important;
+}
+/* ----------------------------------------------------------- end responsive nav ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- start slider ----------------------------------------------------------- */
+.slider-container {
+  width: calc(100% - 35px);
+  height: 430px;
+  position: relative;
+  padding-top: 10px;
+  margin: 10px auto;
+}
+.slider-container img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+}
+
+.slider-controls {
+  width: 800px;
+  overflow: hidden;
+  margin: auto;
+}
+.slider-controls .prev,
+.slider-controls .next {
+  background-color: #fff;
+  color: var(--main-color);
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1 !important;
+  position: absolute !important;
+  top: 50% !important;
+  padding: 5px;
+}
+.slider-controls .prev {
+  float: left;
+  left: -13px;
+}
+.slider-controls .next {
+  right: -13px;
+  float: right;
+}
+.handel-img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: fill; */
+  object-fit: cover;
+}
+.slider-controls .prev.disabled,
+.slider-controls .next.disabled {
+  background-color: rgba(195, 195, 195, 0.46);
+  color: #fff;
+  cursor: no-drop;
+}
+.slider-controls .indicators {
+  float: left;
+  z-index: 1;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+.slider-controls .indicators ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+.slider-controls .indicators ul li {
+  display: inline-block;
+  background-color: var(--gray-200);
+  color: #333;
+  font-weight: 700;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  line-height: 28px;
+  cursor: pointer;
+  margin: 0 4px;
+}
+.slider-controls .indicators ul li.active {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/* ----------------------------------------------------------- end slider ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- start Service Add-Ons ----------------------------------------------------------- */
+.h-section {
+  margin: 30px 0;
+}
+.main-p {
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+.round {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 28px;
+  transform: translate(-50%, -50%);
+}
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+.round input[type="checkbox"]:checked + label {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.badge-price {
+  border-radius: 7px;
+  margin-right: 5px;
+  padding: 5px;
+}
+.srvice-ele {
+  background-color: var(--gray-50);
+  border-radius: 5px;
+  padding: 15px 0;
+  transition: 1s;
+}
+.service-btn {
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+.service-btn:hover {
+  border: 2px solid var(--main-color);
+}
+/* ----------------------------------------------------------- end Service Add-Ons ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- start Service Rating ----------------------------------------------------------- */
+.purchase {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--main-color);
+  color: #fff;
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+.progress-rate {
+  width: 100%;
+  display: block;
+}
+.progress-rate::after,
+.progress-rate::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 5px;
+  display: inline-block;
+  width: 100%;
+}
+.progress-rate::after {
+  background-color: var(--warning-300);
+  width: calc(80% - 20px);
+}
+.progress-rate::before {
+  background-color: var(--gray-200);
+  width: calc(100% - 20px);
+}
+.description-p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 20px;
+}
+#my-comment-textarea {
+  width: 93%;
+  max-width: 95%;
+  min-width: 120px;
+  max-height: 250px;
+  min-height: 150px;
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: var(--gray-50);
+  border-radius: 5px;
+  padding: 20px;
+}
+.post-review {
+  margin-top: 10px;
+  border: 0;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 8px;
+  padding: 15px 40px;
+}
+.card .icon-card {
+  top: 15px;
+  left: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.div-img {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.seller-info .div-img::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.seller-icons {
+  border-radius: 10px;
+  background-color: var(--gray-50);
+  color: var(--main-color);
+  display: inline-block;
+  padding: 15px;
+}
+
+.small-card-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+.small-card-p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.suggested-services-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ----------------------------------------------------------- end Service Rating ----------------------------------------------------------- */
+
+.slider-container img.active,
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
